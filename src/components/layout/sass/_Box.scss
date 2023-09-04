@@ -1,0 +1,70 @@
+// @import './vars.css';
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $White;
+    max-width: 52.3rem;
+    height: 480px;
+    position: absolute;
+    top: 10%;
+    padding: 1rem;
+    border-radius: 30px;
+
+    p {
+        display: flex;
+        color: $Dark-Slate-Grey;
+        text-align: start;
+        font-size: 16px;
+        margin-bottom: .5rem;
+    }
+
+    .right {
+        .list {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            width: 100%;
+            color: $Dark-Slate-Grey;
+
+            p {
+                span {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 1rem 0 0;
+                    align-items: center;
+                }
+            }
+        }
+
+        background-color: $White;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 1.5rem 0;
+
+        h1 {
+            font-size: 3rem;
+            color: $Dark-Slate-Grey;
+        }
+    }
+
+    .left {
+        display: flex;
+        justify-content: flex-end;
+        background-image: url(../img/illustration-sign-up-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 20px;
+    }
+}
+
+
+
+
+
+// .box .left {
+//     border-radius: 20px;
+// }

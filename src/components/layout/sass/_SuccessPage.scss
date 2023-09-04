@@ -1,0 +1,82 @@
+.btn {
+    padding: 1rem 0;
+    margin: 0 auto;
+
+    input {
+        width: 100%;
+        height: 3rem;
+        padding: 1rem 0;
+        background-color: $Charcoal-Grey;
+        color: $White;
+        cursor: pointer;
+        transition: .5s;
+        border: none;
+        font-weight: 700;
+        border-radius: 6px;
+        font-size: 1rem;
+
+        &:hover {
+            transition: .5s;
+            background-color: $Tomato;
+            box-shadow: 1px 4px 7px $Tomato;
+        }
+    }
+}
+
+.cost {
+    padding: 0;
+    margin: 1.5rem 0 0;
+
+    input {
+        border: 1px solid $White;
+        padding: 0 1rem;
+
+        &:hover {
+            transition: .5s;
+            background-color: $Tomato;
+            box-shadow: 1px 7px 10px $Dark-Slate-Grey;
+            border: none;
+        }
+        &:focus{
+            outline: 0;
+        }
+    }
+}
+
+
+.successPage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .successPage {
+        position: relative;
+        top: 5%;
+        background-color: $White;
+        color: $Charcoal-Grey;
+        width: 24.6rem;
+        border-radius: 20px;
+        margin: 0 auto;
+        text-align: start;
+        padding: 1.5rem;
+
+        span {
+            padding: 1rem 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 16px;
+            padding: 1rem 0;
+        }
+
+    }
+}

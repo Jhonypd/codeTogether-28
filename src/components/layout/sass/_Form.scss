@@ -1,0 +1,73 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        color: $Charcoal-Grey;
+        font-size: 14px;
+        font-weight: 700;
+
+        label {
+            text-align: start;
+        }
+
+        .error,
+        #error {
+            color: #f00;
+        }
+    }
+
+    input {
+        height: 3rem;
+        border: 1px solid $Grey;
+        border-radius: 6px;
+        margin: 1rem 0 0;
+
+        &:focus{
+            outline: 0;
+        }
+    }
+
+    #email {
+        padding-left: 2rem;
+    }
+
+    #enviar {
+        background-color: $Charcoal-Grey;
+        color: $White;
+        cursor: pointer;
+        transition: .5s;
+        border: none;
+        font-weight: 700;
+
+        &:hover {
+            transition: .5s;
+            background-color: $Tomato;
+            box-shadow: 1px 7px 10px $Tomato;
+        }
+    }
+    .invalid {
+        transition: .5s;
+        font-weight: 700;
+        border: 1px solid $Tomato;
+        color: $Tomato;
+        background-color: hsl(4deg 100% 67% / 53%);
+        &::placeholder {
+            color: $Tomato;
+            font-weight: 700;
+        }
+    }
+    :focus-visible {
+        outline: none;
+    }
+}
+
+
+
+
+
+
+
